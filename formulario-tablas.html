@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formularios y tablas</title>
+    </head>
+    <body>
+
+        <h1>Formularios y tablas</h1>
+
+        <!-- etiqueta para crear tablas "table" y "td" es para crear las celdas y "tr" es para definir filas-->
+        <!-- border es para marcar las lineas de la tabla, modifica la parte ecterna -->
+        <table border="10">
+            <tr>
+                <!-- th sirve para poner encabezados en las tablas  -->
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>Nada</td>
+                <td>Comida</td>
+                <td>Cine</td>
+                <td rowspan="4">Pozole</td>
+                <td rowspan="4">Chicles</td>
+            </tr>
+            <tr>
+                <td>Parque</td>
+                <td>Comprar ropa</td>
+                <td>Museo</td>
+            </tr>
+            <tr>
+                <td>Patinar</td>
+                <td>Viaje</td>
+                <td>Tamales</td>
+            </tr> 
+        </table>
+        <hr/>
+        <table border="1">
+            <tr>
+                <th> </th>
+                <th>Nombre</th>
+                <th>Masa (1024 kg)</th>
+                <th>Diametro (km)</th>
+                <th>Densidad (kg/m3)</th>
+                <th>Gravedad m/s2</th>
+                <th>Duracion del día (horas)</th>
+            </tr>
+            <tr>
+                <th rowspan="4">Planetas terrestres</th>
+                <th>Mercurio</th>
+                <td>321</td>
+                <td>42342</td>
+                <td>21</td>
+                <td>31</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <th>Venus</th>
+                <td>321</td>
+                <td>42342</td>
+                <td>21</td>
+                <td>31</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <th>Tierra</th>
+                <td>321</td>
+                <td>42342</td>
+                <td>21</td>
+                <td>31</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <th>Marte</th>
+                <td>321</td>
+                <td>42342</td>
+                <td>21</td>
+                <td>31</td>
+                <td>64</td>
+            </tr>
+        </table>
+        <hr/>
+
+        <!-- La etiqueta form sirve para generar formularios e input es para que los usuarios puendan ingresar datos -->
+        <!-- action y method sirven para enviar los datos del formulario -->
+        <!-- Se utiliza el metodo post porque en este no se muestran los elementos en la url
+        mientras que en el metodo get si -->
+        <!-- post se utiliza cuando tenemos datos sensibles  -->
+        <form action="" method="POST">
+            <h3>Registrate</h3>
+            <!-- Se deben de ligar las etiquetas label y input, mediante las propiedades for(en label) 
+            y name(en iinput) -->
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre"/ required>
+            </p>
+
+            <p>
+                <label for="email">Correo electronico:</label>
+                <!-- el type email hace una validacion para que tenga @ y todo eso -->
+                <input type="email" name="email" placeholder="ejemplo@ejemplo.com" required/>
+                <!-- required hace que el campo sea obligatorio -->
+            </p>
+
+            <p>
+                <label for="password">Contraseña:</label>
+                <!-- type password sirve para ocultar la contraseña -->
+                <input type="password" name="password" required/>
+            </p>
+
+            
+            <p>
+                <label for="cumpleanio">Cumpleaños:</label>
+                <!-- type password sirve para ocultar la contraseña -->
+                <input type="date" name="cumpleanio"/>
+            </p>
+            <!-- Este input es un metodo antiguo 
+            <input type="submit" value="Registrar"> -->
+            <!-- El button es un metodo nuevo pero aparece lo mismo que con el input -->
+            <p>
+                <select name="meses" id="">
+                    <!-- el valor que se envia es el que esta en el value -->
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="checkbox">
+                <label for="">Opcion 1</label>
+            </p>
+            
+            <p>
+                <input type="radio" name="color" value="rojo">
+                <label for="">Rojo</label>
+                <input type="radio" name="color" value="verde">
+                <label for="">Verde</label>
+                <input type="radio" name="color" value="azul">
+                <label for="">Azul</label>
+                <input type="radio" name="color" value="amarillo">
+                <label for="">Amarillo</label>
+                <input type="radio" name="color" value="naranja">
+                <label for="">Naranja</label>
+            </p>
+
+            <p>
+                <textarea name="muchotexto" id="" cols="150" rows="20"></textarea>
+            </p>
+            <button type="submit">Registrar</button>
+
+        </form>
+
+    </body>
+</html>

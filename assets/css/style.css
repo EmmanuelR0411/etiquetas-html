@@ -1,0 +1,60 @@
+/* Se agrega el estilo a todas las etiquetas h1 */
+h1{
+    /* color sirve para indicar el color del texto */
+    color:purple;
+    /* text-align: indica la alinacion del texto */
+    text-align: center;
+}
+
+p{
+
+    /* Cambia el tipo de letra (TIPOGRAFIA) */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Sirve para cambiar el tamaño de la letra */
+    font-size: 80px;
+
+    /* Hace mas gruesa o mas delgada la letra */
+    font-weight: 900;
+
+    /* Cambia el tipo de letra     */
+    font-style: italic;
+
+    /* Sirve para estilizar el texto */
+    text-decoration: underline chartreuse;
+
+    /* Transforma las letras en masyusculas o minusculas, etc */
+    text-transform: initial;
+}
+
+div{
+    /* alterar la altura del div */
+    height: 300px;
+
+    /* ancho */
+    width: 400px;
+
+    /* agrega un margen a los lados top-superior bot-inferior left-izquierdo rigth-derecha, se puede utilizar
+    para separar un elemnto del otro */
+    margin-top: 20px;
+    margin-left: 50px;
+
+    /* margen interno en el elemento */
+    padding: 20px;
+}
+
+/* Para referirse a una clase se coloca .nombre */
+.uno{
+    /* Sirve para colocar una imagen, para esto se utiliza la propiedad url */
+    background-image: url('../imagen/husky.jpg');
+
+    /* Ajustar la imagen del background */
+    /* background-repeat: round; Si la iagen es muy pequeña */
+    background-size: cover;
+    background-position: center;
+}
+
+.dos{
+        /* CAMBIA EL COLOR DE FONDO */
+        background-color: saddlebrown;
+}

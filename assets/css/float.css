@@ -1,0 +1,32 @@
+.cajas{
+    /* indicamos el tamaño maximo que puede tener el contenedor
+    (no puede ser mas grande pero si se puede reducir)
+    en este se utilizan pixeles y no porcentajes */
+    max-width: 900px;
+
+    /* este indica cual es el tamaño minimo que se puede tener */
+    min-width: 100px;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.caja{
+    /* Los pixeles o el porcentajes se utiliaza dependiendo de cada situacion */
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 10px;
+    border: 5px solid red;
+    /* para que esten una al lado del otro se utiliza float none no esta flotado left se posiciona a la izquierda */
+    /* float rompe la parte del flujo de html, para que no suceda 
+    se crea una clase nueva para limpiar el float */
+    float: left;
+}
+
+.clearfix{
+    /* Limpia el flotado */
+    float: none;
+    /* Limpia ambos lados */
+    clear: both;
+}

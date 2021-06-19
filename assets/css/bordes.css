@@ -1,0 +1,99 @@
+.caja{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uno{
+    background-color: #fafa31;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* Así se aplica un borde, hay dos formas, forma uno:*/
+    /* border: 2px solid #000000; */
+    /* forma dos: */
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* radius es para redondear los bordes, ya sean todos o solo algunos */
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+}
+
+.dos{
+    background-color: #22b822;
+    /* Radius al 50%sto vuelve el elemto un circulo */
+    border-radius: 50%;
+}
+
+.a{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 150px;
+    border-bottom-right-radius: 50%;
+}
+
+.b{
+    background-color: blue;
+    padding: 20px;
+    float: left;
+    margin-left: 20px;
+    width: 30%;
+    height: 150px;
+    border-bottom-right-radius: 30%;
+}
+
+.c{
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    width: 30%;
+    height: 150px;
+    /* border-end-end-radius: 25%; */
+    border-end-end-radius: 120px;
+}
+
+.d{
+    background-color: #321;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30%;
+    height: 150px;
+    border-radius: 100px 300px 100px 300px;
+}
+
+.e{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 30%;
+    height: 150px;
+    border-radius: 30px 10px 30px 10px / 10px 30px 10px;
+}
+
+.f{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: hotpink;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.fix{
+    float: none;
+    clear: both;
+}

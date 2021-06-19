@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- Indica que uso HTML5 -->
+<html>
+    <head>
+        <!-- <meta charset="UTF-8"/> Sirve para establecer la codificacion de caracteres
+             (que puedan aparecer acentos y ñ)("/" Sirve para darle cierre ya que meta 
+             no tiene etiqueta de cierre) -->
+        <meta charset="UTF-8"/>
+        <!-- La etiqueta title sive para colocar un nombre en la pestaña del navegador -->
+        <title>Mi primera pagina web</title>
+    </head>
+    <body>
+        <!-- Etiquetas de encabezado desde el h1 hasta el h6, por buena practica solo debe haber un h1-->
+        <h1>Hola me llamo Emmanuel</h1>
+        <h2>Soy un h2</h2>
+        <h3>Soy un h3</h3>
+        <!-- h2 y h3 se puede usar para subtitulos -->
+        <h4>Soy un h4</h4>
+        <h5>Soy un h5</h5>
+        <h6>Soy un h6</h6>
+        
+        <!-- etiqueta de parrafo p -->
+        <p>Yo soy un parrafo</p>
+        <!-- Para letras en negritas se usa strong -->
+        <!-- em Se utiliza para la crusiva -->
+        <p>Esto es nomal y <strong>esto en negritas</strong> <em>y esto en cursiva</em> <span>La 
+            etiqueta spam sirve para cambiar el estilo  de las letras con CSS</span>
+        </p>
+        <!-- Esta etiqueta sirve para hacer citas -->
+        <blockquote>Esto es una cita</blockquote>
+        <!-- br sirve para dar saltos de linea -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        <br/> Nihil alias expedita ex qui totam unde quos quae nisi, temporibus exercitationem <br/> illum 
+        dicta, molestiae cum hic deleniti nesciunt magnam dolorem reiciendis.
+        Architecto delectus laudantium nisi labore eveniet veritatis ea dolorum! 
+        <br/> Deserunt, quo sapiente! Pariatur debitis voluptatem quos nesciunt 
+        <!-- El hr crea una linea horizontal -->
+        <hr/> dolorum ullam reiciendis, impedit soluta ducimus earum repudiandae praesentium ratione 
+        exercitationem provident facilis?
+        Cum modi laudantium reprehenderit accusantium sapiente sit enim maiores eligendi, 
+        amet perspiciatis exercitationem delectus et. Eligendi iure natus, quo, obcaecati 
+        assumenda necessitatibus nemo iste laborum, aliquam quaerat adipisci tempore sequi!
+        <hr/>    
+        </p>
+
+        <!-- Etiquetas de listas -->
+        <!-- <ol> Es para crear listas ordenadas, mientras que li se utiliza para cada elemento de la lista -->
+        <p>Listas ordenadas</p>
+        <ol>
+            <li>Perro</li>
+            <li>Gato</li>
+            <li>Pajaros</li>
+            <li>Quetzal</li>
+        </ol>
+
+        <!-- <ul>Es para crear listas sin orden, lo contrario a <ol> -->
+        <p>Listas desordenadas</p>
+        <ul>
+            <li>Perro</li>
+            <li>Gato</li>
+            <li>Pajaros</li>
+            <li>Quetzal</li>
+        </ul>
+
+        <!-- Se pueden crear sublistas (Listas dentro de listas)-->
+
+        <ol>
+            <li>
+                Perro
+                <ul>
+                    <li>Chihuhua</li>
+                    <li>Husky</li>
+                    <li>Pastor aleman</li>
+                </ul>
+            </li>
+            <li>Gatos</li>
+            <li>Pajaros</li>
+        </ol>
+        <hr/>
+
+        <!-- img Srive para insertar imagenes -->
+        <!-- src sirve para poner la direcciòn de la imagen, alt es para colcar una descripcion -->
+        <!-- title sirve para que aparezca un titulo cuando posas el raton sobre la imagen -->
+        <!-- width es para el ancho de la imagen y heigh es para la altura, se recomienda 
+            usar solo una patra que la imagen no pierda su proporcion -->
+        <img src="https://mymodernmet.com/wp/wp-content/uploads/2020/05/Quetzal-1.jpg" alt="Esto es un quetzal"
+        title="Quetzal" width="500"/>
+
+        <hr/>
+        <img src="assets/imagen/husky.jpg" alt="Esto es un husky" width="500">
+
+        <!-- Nos permite crear bloques -->
+        <div>
+            Soy un bloque
+        </div>
+        <div>
+            Soy otro bloque
+        </div>
+
+        <!-- Se utiliza par poner links, ya sea un link de internet como a otro documento -->
+        <!-- self lo abre en una misma pestaña (Este lo trae por defecto) y blank lo abre en una nueva pestaña -->
+        <a href="https://google.com.mx" target="_blank">Google</a> <p></p>
+        <a href="pagina2.html">Pagina2</a>
+        
+    </body>
+</html>

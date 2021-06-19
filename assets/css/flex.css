@@ -1,0 +1,49 @@
+.cajas{
+    max-width: 900px;
+    /* Aqui se coloca todo el contenido interior uno al lado del otro  */
+    display: flex;
+
+    background-color: lightgray;
+    border: 3px solid black;
+    height: 600px;
+
+    /* centramos el contenedor principal (quien contiene las cajas) */
+    margin: 0 auto;
+
+    /* centra el contenido de forma horizontal */
+    justify-content: center ;
+    /* centra de manera vertical */
+    align-items: center;
+ 
+    /*Para poner elementos uno debajo del otro
+    flex-direction: column; */
+
+    /* Se utiliza para bajar elemntos si es que uno no entra al lado del otro */
+    /* flex-wrap: wrap; */
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.roja{
+    background-color: red;
+
+    /* Poner los elemntos en diagonal */
+    align-self: baseline;
+    justify-self: baseline;
+}
+
+.verde{
+    background-color: green;
+}
+
+.azul{
+    background-color: blue;
+
+    /* Poner elementos en diagonal */
+    align-self: flex-end;
+}

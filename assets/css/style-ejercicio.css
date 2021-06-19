@@ -1,0 +1,67 @@
+body{
+    /* Para introducir valores hexadecimales se coloca el #, tambian acepta rgb y 
+    rgba (este es para la transparencia) */
+    background: rgb(199, 199, 199);
+    
+}
+
+/* Indicamos que dentro del hedear hay un h1, lo que hace que seamos mas especificos, sirve para estructuras grandes */
+header > h1{
+
+    /* Los valores se usan con % para realzar diseño responsivo */
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: rgb(150, 149, 149);
+    width: 900px;
+    margin-left: 250px;
+    font-weight: 700;
+
+}
+
+.html{
+ 
+    width: 150px;
+    height: 150px;
+
+    padding: 15px;
+    /* Si utilizo margin 0 auto me centra el elemento, el cero hace referencia a el superior e inferior
+    si pones un valor toma los 4 si pones dos toma dos y dos */
+    margin: -10px;
+    float: left; 
+}
+
+.clear-fix{
+    clear:both;
+    float:none;
+}
+
+.css{
+
+    width: 109px;
+    height: 150px;
+
+    padding: 15px;
+    
+    margin-right: 17px;
+    float: left;
+
+}
+
+.parrafo{
+
+    width: 770px;
+    height: 200px;
+    margin-left: 300px;
+    margin-right: 250px;
+    text-align: justify;
+    text-indent: 15px;
+}
